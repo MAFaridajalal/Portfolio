@@ -465,3 +465,194 @@ body {
         transform: scale(1);
     }
 }
+
+/* Start: Key Projects Cards Reset and Fix */
+#projects #project-grid.project-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+#projects .project-card-item {
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    overflow: hidden !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border: 1px solid rgba(224, 225, 221, 0.5) !important;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: projectCardFadeIn 0.5s ease forwards;
+    position: relative;
+}
+
+
+@keyframes projectCardFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#projects .project-card-item:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+
+#projects .project-card-header {
+    background-color: #1B263B !important;
+    padding: 15px 20px !important;
+    color: white !important;
+}
+
+
+#projects .project-card-header h3 {
+    margin: 0 !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    color: white !important;
+}
+
+
+#projects .project-card-body {
+    padding: 20px !important;
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+
+#projects .project-info-item {
+    margin-bottom: 15px !important;
+}
+
+
+#projects .project-info-item:last-child {
+    margin-bottom: 0 !important;
+}
+
+
+#projects .project-info-item h4 {
+    color: #5BC0BE !important;
+    margin: 0 0 5px 0 !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+}
+
+
+#projects .project-info-item p {
+    margin: 0 !important;
+    line-height: 1.5 !important;
+    color: #444 !important;
+}
+
+
+#projects .project-info-item strong {
+    color: #1B263B !important;
+    font-weight: 700 !important;
+}
+
+
+/* Staggered animation delays for cards */
+#projects .project-card-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+
+#projects .project-card-item:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+
+#projects .project-card-item:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+
+/* Responsive adjustments with !important to override existing styles */
+@media (max-width: 992px) {
+    #projects #project-grid.project-cards-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #projects #project-grid.project-cards-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+   
+    #projects .project-card-item {
+        max-width: 500px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #projects .project-card-header {
+        padding: 12px 15px !important;
+    }
+   
+    #projects .project-card-body {
+        padding: 15px !important;
+    }
+   
+    #projects .project-card-header h3 {
+        font-size: 1.1rem !important;
+    }
+   
+    #projects .project-info-item {
+        margin-bottom: 12px !important;
+    }
+}
+/* End: Key Projects Cards Reset and Fix */
+
+
+/* Resume Download Button Styles - Highly specific */
+.hero-cta-buttons .resume-download-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #5BC0BE !important;
+    color: white !important;
+    padding: 12px 24px !important;
+    border-radius: 30px !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    transition: background-color 0.3s ease, transform 0.3s ease !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+
+.hero-cta-buttons .resume-download-btn:hover {
+    background-color: #4aa9a7 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+.hero-cta-buttons .resume-download-btn i {
+    margin-right: 8px !important;
+}
+
+
