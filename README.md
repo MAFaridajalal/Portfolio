@@ -9,7 +9,7 @@ This is the professional personal website portfolio of Abdul Faridajalal Mohamma
 - Hosted via GitHub Pages
 
 ## 🚀 Live Website
-[https://mafaridajalal.github.io/farida-portfolio/](https://mafaridajalal.github.io/portfolio/)
+[https://mafaridajalal.github.io/farida-portfolio/](https://mafaridajalal.github.io/Portfolio/)
 
 ## 📜 License
 This project is open for personal and professional portfolio use.
